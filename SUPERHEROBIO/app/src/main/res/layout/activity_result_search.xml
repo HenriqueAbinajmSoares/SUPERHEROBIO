@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBackgroudSearch"
+        android:layout_width="463dp"
+        android:layout_height="871dp"
+        android:contentDescription="@string/imgBackgroundSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgrounds" />
+
+    <TextView
+        android:id="@+id/lblNameHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginBottom="348dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAlterEgoHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/lblAliasesEgoHero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNameHero" />
+
+    <TextView
+        android:id="@+id/lblAliasesEgoHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/lblPlaceHero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAlterEgoHero" />
+
+    <TextView
+        android:id="@+id/lblPlaceHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/lblFirstApHero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAliasesEgoHero" />
+
+    <TextView
+        android:id="@+id/lblFirstApHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/lblPubHero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPlaceHero" />
+
+    <TextView
+        android:id="@+id/lblPubHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/lblAlignHero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblFirstApHero" />
+
+    <TextView
+        android:id="@+id/lblAlignHero"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="257dp"
+        android:drawableTint="#F4F4F4"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPubHero" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="159dp"
+        android:onClick="onClickVoltar"
+        android:text="@string/btnVoltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNameHero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

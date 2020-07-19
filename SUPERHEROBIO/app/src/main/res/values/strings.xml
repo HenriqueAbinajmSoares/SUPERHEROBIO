@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SUPERHEROBIO</string>
+    <string name="edtxtSearch">Pesquise aqui o nome do super heroi/heroína</string>
+    <string name="btnSearch">PESQUISAR</string>
+    <string name="imgBackground">Imagem de Deadpool em arte minimalista.</string>
+    <string name="imgBackgroundSearch">Imagem da logo do Batman em arte lowpoly.</string>
+    <string name="lblNameHero"></string>
+    <string name="lblAliasesHero"></string>
+    <string name="lblAlterEgoHero"></string>
+    <string name="lblPlaceHero"></string>
+    <string name="lblFirstApHero"></string>
+    <string name="lblPubHero"></string>
+    <string name="lblAlignHero"></string>
+    <string name="btnVoltar">VOLTAR</string>
+</resources>
