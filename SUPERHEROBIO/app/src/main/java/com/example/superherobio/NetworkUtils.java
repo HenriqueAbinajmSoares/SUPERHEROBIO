@@ -12,21 +12,21 @@ import java.net.URL;
 
 public class NetworkUtils {
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
-    private static final String SUPERHEROES_URL = "https://superheroapi.com/api/access-token/character-id/biography";
-    private static final String QUERY_PARAM = "";
-    private static final String MAX_RESULTS = "maxResults";
-    private static final String TIPO_IMPRESSAO = "printType";
+    private static final String SUPERHEROES_URL = "https://www.superheroapi.com/api.php/1213368982337066/";
+    private static final String PARAM = "/biography";
         static String searchSuperHeroInfo(String queryString){
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
             String superheroJSONString = null;
             try {
-                Uri builtURI = Uri.parse(SUPERHEROES_URL).buildUpon()
-                        .appendQueryParameter(QUERY_PARAM, queryString)
-                        .appendQueryParameter(MAX_RESULTS, "10")
-                        .appendQueryParameter(TIPO_IMPRESSAO, "superhero")
-                        .build();
-                URL requestURL = new URL(builtURI.toString());
+                //Uri builtURI = Uri.parse(SUPERHEROES_URL).buildUpon()
+                //        .appendQueryParameter(QUERY_PARAM, queryString)
+                //        .build();
+                //URL requestURL = new URL(builtURI.toString());
+
+                String s = SUPERHEROES_URL;
+                s = s.concat(queryString + PARAM);
+                URL requestURL = new URL(s);
 
                 urlConnection = (HttpURLConnection) requestURL.openConnection();
                 urlConnection.setRequestMethod("GET");

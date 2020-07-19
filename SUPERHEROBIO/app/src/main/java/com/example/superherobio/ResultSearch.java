@@ -112,8 +112,8 @@ public class ResultSearch extends AppCompatActivity implements LoaderManager.Loa
                 JSONObject hero = itemsArray.getJSONObject(i);
                 JSONObject volumeInfo = hero.getJSONObject("volumeInfo");
                 try {
-                    name = volumeInfo.getString("name");
-                    alterego = volumeInfo.getString("full-name");
+                    name = volumeInfo.getString("full-name");
+                    alterego = volumeInfo.getString("alter-egos");
                     aliases = volumeInfo.getString("aliases");
                     place = volumeInfo.getString("place-of-birth");
                     firstap = volumeInfo.getString("first-appearance");
