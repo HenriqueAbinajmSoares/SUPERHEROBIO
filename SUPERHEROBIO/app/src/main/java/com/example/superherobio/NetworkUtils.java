@@ -36,16 +36,19 @@ public class NetworkUtils {
 
                 reader = new BufferedReader(new InputStreamReader(inputStream));
 
-                StringBuilder builder = new StringBuilder();
-                String linha;
-                while ((linha = reader.readLine()) != null) {
+                //StringBuilder builder = new StringBuilder();
+                String linha = reader.readLine();
+
+                /*while (reader.readLine() != null) {
+                    linha = reader.readLine();
                     builder.append(linha);
                     builder.append("\n");
-                }
-                if (builder.length() == 0) {
+                }*/
+                if (linha.length() == 0) {
                     return null;
                 }
-                superheroJSONString = builder.toString();
+                superheroJSONString = linha;
+
             }catch (IOException e){
                 e.printStackTrace();
             }finally {
@@ -64,3 +67,5 @@ public class NetworkUtils {
             return superheroJSONString;
         }
 }
+
+

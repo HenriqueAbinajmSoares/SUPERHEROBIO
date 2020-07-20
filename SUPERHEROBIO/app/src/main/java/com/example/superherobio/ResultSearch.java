@@ -40,7 +40,7 @@ public class ResultSearch extends AppCompatActivity implements LoaderManager.Loa
         if (getSupportLoaderManager().getLoader(0) != null) {
             getSupportLoaderManager().initLoader(0, null,this);
         }
-        String queryString = bundleHero.getString("key_nmHero");
+        String queryString = bundleHero.getString("key_idHero");
 
         ConnectivityManager connMgr = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -63,7 +63,7 @@ public class ResultSearch extends AppCompatActivity implements LoaderManager.Loa
                 AlignHero.setText("Carregando...");
         } else {
             if (queryString.length() == 0 ) {
-                NameHero.setText("Informe um nome válido");
+                NameHero.setText("Informe um ID válido");
                 AlterEgoHero.setText(" ");
                 AliasesHero.setText(" ");
                 PlaceHero.setText(" ");

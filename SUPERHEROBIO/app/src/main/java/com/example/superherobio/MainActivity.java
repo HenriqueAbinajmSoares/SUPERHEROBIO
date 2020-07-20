@@ -10,7 +10,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    String nameSuperhero;
+    String idSuperhero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +27,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         EditText edtxtSearch = (EditText) findViewById(R.id.edtxtSearch);
-
-        nameSuperhero = edtxtSearch.getText().toString();
+        idSuperhero = edtxtSearch.getText().toString();
 
         Intent intent = new Intent(this, ResultSearch.class);
-
         Bundle bundleHero = new Bundle();
-
-        bundleHero.putString("key_nmHero", String.valueOf(nameSuperhero));
-
+        bundleHero.putString("key_idHero", String.valueOf(idSuperhero));
         intent.putExtras(bundleHero);
-
         startActivity(intent);
     }
 }
