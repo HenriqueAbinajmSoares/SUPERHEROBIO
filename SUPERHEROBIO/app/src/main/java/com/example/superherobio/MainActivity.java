@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -17,6 +18,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+        public void OnClickLoja(View view) {
+            Uri webpage = Uri.parse("http://www.comix.com.br/");
+            Intent intent = new Intent(Intent.ACTION_VIEW,webpage);
+            startActivity(intent);
+        }
+
+        public void OnClickIdList(View view) {
+            Uri webpage = Uri.parse("https://superheroapi.com/ids.html");
+            Intent intent = new Intent(Intent.ACTION_VIEW,webpage);
+            startActivity(intent);
+        }
 
     public void OnClickSearch(View view) {
         InputMethodManager inputManager = (InputMethodManager)

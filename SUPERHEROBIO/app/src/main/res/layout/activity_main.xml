@@ -13,10 +13,10 @@
         android:contentDescription="@string/imgBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/background" />
 
     <EditText
@@ -26,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="61dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="387dp"
         android:autofillHints=""
         android:backgroundTint="#2B2B2B"
         android:drawableTint="#FFFFFF"
@@ -37,7 +37,7 @@
         android:textColor="@android:color/white"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#CCCCCC"
-        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintBottom_toTopOf="@+id/btnIdList"
         app:layout_constraintEnd_toStartOf="@+id/imgBackground"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,5 +57,29 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtxtSearch" />
+
+    <Button
+        android:id="@+id/btnIdList"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="OnClickIdList"
+        android:text="@string/btnIdList"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtSearch" />
+
+    <Button
+        android:id="@+id/btnLoja"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:onClick="OnClickLoja"
+        android:text="@string/btnLoja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIdList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

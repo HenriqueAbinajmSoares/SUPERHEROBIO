@@ -2,6 +2,8 @@
     <string name="app_name">SUPERHEROBIO</string>
     <string name="edtxtSearch">Pesquise aqui o ID do super heroi/heroína</string>
     <string name="btnSearch">PESQUISAR</string>
+    <string name="btnIdList">LISTA DE IDS</string>
+    <string name="btnLoja">LOJA DE QUADRINHOS</string>
     <string name="imgBackground">Imagem de Deadpool em arte minimalista.</string>
     <string name="imgBackgroundSearch">Imagem da logo do Batman em arte lowpoly.</string>
     <string name="lblNameHero"></string>
